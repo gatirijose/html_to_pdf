@@ -1,0 +1,14 @@
+asgiref
+beautifulsoup4
+certifi
+charset-normalizer
+pillow
+xhtml2pdf
+django
+django-tinymce
+django-bootstrap5
+django-bootstrap-datepicker-plus
+tzdata
+urllib3
+python-dateutil
+whitenoise

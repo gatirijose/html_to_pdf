@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        h1{
+            font-size: 3em;
+            text-align: center;
+            color: red;
+        }
+        h6{
+            font-size: 1.7em;
+            text-align: center;
+        }
+        h5{
+            font-size: 1.9em;
+            text-align: center;
+        }
+        h4{
+            font-size: 2.1em;
+            text-align: center;
+        }
+        h3{
+            font-size: 2.4em;
+            text-align: center;
+        }
+        h2{
+            font-size: 2.7em;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5em;
+            text-align: start;
+        }
+         text{
+            text-align: start; 
+            color: red;
+        }
+    </style>
+    <title>{{post.title}}</title> 
+</head>
+<body>
+    <h1 class="text-center">{{post.title}}</h1> 
+    <small style="display: inline; float: right; text-align: start;">{{post.date_created}}</small>
+    <hr>
+    {{post.content|safe}}
+</body>
+</html>

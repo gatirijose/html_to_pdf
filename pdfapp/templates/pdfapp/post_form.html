@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block title %}{{object.title|truncatewords:1}}{% endblock %}
+{{form.media}}
+{% block content %}
+    <form  method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <br>
+        {% bootstrap_button "Save" button_type="submit" button_class="btn btn-primary" %}
+    </form>
+{% endblock %}

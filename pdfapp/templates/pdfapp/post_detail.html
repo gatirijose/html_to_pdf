@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block title %}{{object.title|truncatewords:1}}{% endblock %}
+{% block navbar_link %}<a class="text-danger" href="{% url 'pdf' pk=object.pk %}"><i style="width: 1.5em; height: 1.5rem;" class="fas fas fa-file-pdf" type="submit"></i></a>
+{% endblock %}
+{% block content %}
+
+    <h1 style="text-decoration: underline;" class="text-center page-title">{{object.title}}</h1>
+    <hr>
+    <p class="text-muted text-right"><small>{{object.date_created}}</small></p>
+    {{object.content|safe}}
+{% endblock %}

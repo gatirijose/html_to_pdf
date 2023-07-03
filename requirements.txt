@@ -8,6 +8,7 @@ django
 django-tinymce
 django-bootstrap5
 django-bootstrap-datepicker-plus
+gunicorn
 tzdata
 urllib3
 python-dateutil

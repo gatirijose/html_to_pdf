@@ -22,7 +22,7 @@ class PostDetailView(DetailView):
 def render_pdf_view(request, *args, **kwargs):
     pk = kwargs.get('pk')
     post = get_object_or_404(Post, pk=pk)
-    template_path = 'pdfapp\pdf.html'
+    template_path = 'templates\pdfapp\pdf.html'
     context = {'post': post}
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = f'filename="render_pdf_{post.title}.pdf"'
